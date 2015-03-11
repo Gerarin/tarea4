@@ -5,160 +5,294 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/mystyle.css" />    
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
     
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
     
     <div class="row">
       <div class="large-12 columns">
       	<div class="panel">
-	        <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-	        <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-	        <p>Once you've exhausted the fun in this document, you should check out:</p>
-	        <div class="row">
-	        	<div class="large-4 medium-4 columns">
-	    		<p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-	    	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-	        	</div>
-	        	<div class="large-4 medium-4 columns">
-	        		<p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-	        	</div>        
-					</div>
-      	</div>
+	        <h2 class="text-center ">WELCOME TO MISKATONIC UNIVERSITY</h2>
+	    
+       	</div>
+	    </div>
+
+   	  <div class="small-6 columns small-centered selection_panel">
+        <a href="#" class="button expand round">Create Character</a>
+        <a href="#" class="button expand round">Create Team</a>
+        <a href="#" class="button expand round">Load Team</a>
       </div>
+
+<!-- Pagina 02 ******************************** -->
+
+<div class="small-12 columns selection_column margin_abajo">
+
+<!-- aqui ira el editor del personaje -->
+
+      <div class="small-8 small-centered columns pjEditor">
+      
+        <div class="row">
+      
+          <form name="newName" method="" action="">
+
+            <div class="small-3 columns">
+                <label class="inline"  for="namepj">Nombre</label>
+            </div>
+            
+            <div class="small-9 columns">
+                <input id="selectedName" name="namepj" type="text" >
+            </div>
+
+            <div class="small-12 columns ">
+                 <label class="">Profession
+
+                    <select>
+          
+                      <option value="husker">Investigador</option>
+                      <option value="starbuck">Cientifico</option>
+                      <option value="hotdog">Policia</option>
+                      <option value="apollo">Cazador</option>
+                      <option value="hotdog">Diletante</option>
+                      <option value="apollo">Medico</option>
+
+                    </select>
+                </label>
+             </div>
+          </form> 
+        </div>
+        <div>  
+
+          <hr>
+
+          <div class="small-12 columns atriTable">
+        
+            <div class="row headTable">
+
+              <div class="small-5 columns expand text-center">ATRRIBUTE</div>
+              <div class="small-3 columns expand text-center">TOTAL</div>
+              <div class="small-2 columns expand text-center">ADD </div>
+              <div class="small-2 columns expand text-center">REST </div>
+
+            </div>  <!-- headTable -->
+<!-- FUERZA ---------------------------------------->
+            <div class="row prueba" value="0" stat="str">
+
+              <div class="small-5 columns expand text-left">Fuerza</div>
+
+              <div id="fuerza" class="small-3 columns expand text-center"> <p class="stat01"  >0</p> </div>
+
+              <div class="small-2 columns expand">
+                <a href="#" class="text-center button secondary round tiny centered plusButton" > + </a> 
+              </div>
+
+              <div class="small-2 columns expand">
+                <a href="#" class="text-center button secondary round tiny centered minusButton"> - </a>
+              </div>
+
+            </div>
+<!-- DESTREZA -------------------------------------->
+
+            <div class="row prueba" value="0" stat="dex">
+
+              <div class="small-5 columns expand text-left">Destreza</div>
+
+              <div id="destreza" class="small-3 columns expand text-center"><p class="stat01" value="0">0</p> </div>
+
+              <div class="small-2 columns expand">
+                <a href="#" class="text-center button secondary  round tiny centered plusButton" > + </a>
+              </div>
+              <div class="small-2 columns expand">
+                <a href="#" class="text-center button secondary round round tiny centered minusButton"> - </a>
+              </div>
+
+            </div>
+<!-- INTELIGENCIA ---------------------------->
+
+            <div class="row prueba" value="0" stat="int">
+
+              <div class="small-5 columns expand">Inteligencia</div>
+              <div id="inteligencia" class="small-3 columns expand text-center"><p class="stat01" >0</p></div>
+              <div class="small-2 columns expand">
+                <a href="#" class="text-center button secondary  round tiny centered plusButton"> + </a>
+              </div>
+              <div class="small-2 columns expand">
+                <a href="#" class="text-center button secondary  round tiny centered minusButton"> - </a>
+              </div>
+
+            </div>
+<!-- CARISMA ---------------------------------->         
+            <div class="row prueba" value="0" stat="cha">
+
+              <div class="small-5 columns expand">Carisma</div>
+              <div id="carisma" class="small-3 columns expand text-center"><p class="stat01" >0</p></div>
+              <div class="small-2 columns expand">
+                <a href="#" class="text-center button secondary  round tiny centered plusButton"> + </a>
+              </div>
+              <div class="small-2 columns expand">
+                <a href="#" class="text-center button secondary  round tiny centered minusButton"> - </a>
+              </div>
+
+            </div>
+          
+          </div> <!-- atritable -->
+
+        
+          <div class=" small-12 columns text-right">
+            <a class="button round secondary success left" role="button" href="#" data-reveal-id="myModal">Portrait Selection</a>
+            <h5>Total points Remaining: <span class="iniPoints"></span></h5>
+          </div>
+
+        </div> <!-- statGen --> 
+
+        </div>  
+
+      </div> <!-- pjEditor -->
+
+<!-- Aqui aparecen los membros del partie a medida q los van creando -->
+
+      <div id="cajaFinal" class="small-4 columns">
+      </div>
+
+
+<!-- aqui iran explicaciones y los botones q indican q se ha acabado el proceso -->
+
+      <div class="small-4 columns infoPanel ">
+
+        <div class="panel">
+
+<!-- parte de laexplicacion del personaje y sus stats principales -->
+
+          <div class="hide Expo hide-for-small" >
+
+            <h4 class="text-center title className"></h4>
+            <p class="resume"></p>
+            <p class="abilities"></p>
+
+          </div>
+
+            
+          <h5>ARE YOU READY?</h5>
+            
+          <h6 class="subheader hide-for-small">Tu personaje esta listo para la batalla, termina de editarlo o reemplazalo</h6>
+            
+          <div class="row finalChoice">
+
+<!-- boton para grabar el personaje creado para utilizarlo despues -->
+
+            <a class="columns small-6 button round secondary success checkButton " role="button" href="#" >Add to Party</a>
+        
+<!-- boton para borrar todoy regresar a 0 -->
+
+            <a class="columns small-6 button round secondary success resetButton" role="button" aria-label="submit form" href="#" >REJECTED</a>
+          
+          </div>
+  
+        </div>
+
+<!-- aqui va el partie completo a medida q lo va editando -->
+
+        <div class="row finalButton">    
+          <div class="columns small-12">
+             <button id="readyBaby" class="button centered success expand round disabled">LETS KILL SOME ORCS!!!</button>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- cierre de infoPanel -->
     </div>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
+
+
+    <div id="myModal" class="reveal-modal picture_galery" data-reveal>
+      <div class="row">
+        <div class="small-2 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/01.jpg" alt="">
+          </a>
         </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
+
+        <div class="small-2 columns cha_image_galery">
+          <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/02.jpg" alt="">
+          </a>
         </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
+
+        <div class="small-2 columns cha_image_galery">
+          <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/03.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="small-2 columns cha_image_galery">
+          <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/04.jpg" alt="">
+          </a>
         </div>
         
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-12.columns" />
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <label>Input Label</label>
-				      <input type="text" placeholder="large-4.columns" />
-				    </div>
-				    <div class="large-4 medium-4 columns">
-				      <div class="row collapse">
-				        <label>Input Label</label>
-				        <div class="small-9 columns">
-				          <input type="text" placeholder="small-9.columns" />
-				        </div>
-				        <div class="small-3 columns">
-				          <span class="postfix">.com</span>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Select Box</label>
-				      <select>
-				        <option value="husker">Husker</option>
-				        <option value="starbuck">Starbuck</option>
-				        <option value="hotdog">Hot Dog</option>
-				        <option value="apollo">Apollo</option>
-				      </select>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-6 medium-6 columns">
-				      <label>Choose Your Favorite</label>
-				      <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-				      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-				    </div>
-				    <div class="large-6 medium-6 columns">
-				      <label>Check these out</label>
-				      <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-				      <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-12 columns">
-				      <label>Textarea Label</label>
-				      <textarea placeholder="small-12.columns"></textarea>
-				    </div>
-				  </div>
-				</form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-			  <h5>Try one of these buttons:</h5>
-			  <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-				<div class="panel">
-        	<h5>So many components, girl!</h5>
-        	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-        	<a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
+        <div class="small-2 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/05.jpg" alt="">
+          </a>
+        </div>
+        
+        <div class="small-2 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/06.jpg" alt="">
+          </a>
         </div>
       </div>
+
+      <div class="row margin_arriba">  
+        <div class="small-2 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/07.jpg" alt=""> 
+          </a>
+        </div>
+        
+        <div class="small-2 columns cha_image_galery">
+          <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/08.jpg" alt="">
+          </a>
+        </div>
+        
+        <div class="small-2 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/09.jpg" alt="">
+          </a>
+        </div>
+        
+        <div class="small-2 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/10.jpg" alt="">
+          </a>
+        </div>
+        
+        <div class="small-2 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/11.jpg" alt="">
+          </a>
+        </div>
+        
+        <div class="small-2 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/12.jpg" alt="">
+          </a>
+        </div>
+
+        
+      </div>
     </div>
+             
+    <div class="columns small-12 personaje_listo hide ">
+      <div class="row">
+
+      <div class="margin_arriba margin_abajo small-5 columns"><img class="pj_listo_imagen" src="" alt=""></div>
+      <div class="small-7 columns"><h4 class="pj_listo_name"></h4></div>
+
+      </div>
+    </div>         
+
+
+
+    </div>
+
+ 
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/myjquery.js"></script>
     <script>
       $(document).foundation();
     </script>
