@@ -1,98 +1,95 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation | Welcome</title>
+    <title>Tarea Numero 4</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/mystyle.css" />    
     <script src="js/vendor/modernizr.js"></script>
   </head>
+
   <body>
     
+<!-- TITULO SIMPLON ****************************************     -->
     
-    <div class="row">
+    <header class="row">
+
       <div class="large-12 columns">
       	<div class="panel">
 	        <h2 class="text-center ">WELCOME TO MISKATONIC UNIVERSITY</h2>
-	    
-       	</div>
+
+	     	</div>
 	    </div>
+    </header>  
 
-   	  <div class="small-6 columns small-centered selection_panel">
-        <a href="#" class="button expand round">Create Character</a>
-        <a href="#" class="button expand round">Create Team</a>
-        <a href="#" class="button expand round">Load Team</a>
-      </div>
+    <nav class="small-6 columns small-centered selection_panel">
+   	  <ul  class="button-group round even-3">
+        <li><a href="#" class="button createTeam">Create Team</a></li>
+        <li><a href="#" class="button loadTeam">Load Team</a></li>
+        <li><a href="#" class="button exitButton">Exit</a></li>
+     
+      </ul>
+    </nav>
 
-<!-- Pagina 02 ******************************** -->
+<!-- Pagina 02 creacion de parties **************************** -->
 
-<div class="small-12 columns selection_column margin_abajo">
+    <div id="createPanel" class="row hide">
 
-<!-- aqui ira el editor del personaje -->
+      <!-- aqui ira el editor del personaje -->
 
-      <div class="small-8 small-centered columns pjEditor">
+      <div class="small-4 small-left columns pjEditor">
       
-        <div class="row">
+          <div class="row">
       
-          <form name="newName" method="" action="">
+            <form name="personaje" method="" action="">
 
-            <div class="small-3 columns">
-                <label class="inline"  for="namepj">Nombre</label>
-            </div>
-            
-            <div class="small-9 columns">
-                <input id="selectedName" name="namepj" type="text" >
-            </div>
+              <div class="small-3 columns">
+                  <label class="inline"  for="namepj">Nombre</label>
+              </div>
+              
+              <div class="small-9 columns">
+                  <input id="selectedName" name="namepj" type="text" >
+              </div>
 
-            <div class="small-12 columns ">
-                 <label class="">Profession
+              <div class="small-12 columns inline ">
+                  <label class="">Profession</label>
+              </div>
 
-                    <select>
-          
-                      <option value="husker">Investigador</option>
-                      <option value="starbuck">Cientifico</option>
-                      <option value="hotdog">Policia</option>
-                      <option value="apollo">Cazador</option>
-                      <option value="hotdog">Diletante</option>
-                      <option value="apollo">Medico</option>
+              <div class="small-9 columns">
+                      <select>          
+                        <option value="investigador">Investigador</option>
+                        <option value="cientifico">Cientifico</option>
+                        <option value="policia">Policia</option>
+                        <option value="criminal">Criminal</option>
+                        <option value="diletante">Diletante</option>
+                        <option value="medico">Medico</option>
 
-                    </select>
-                </label>
-             </div>
-          </form> 
-        </div>
-        <div>  
+                      </select>
+               </div>
+            </form> 
 
-          <hr>
+          </div>
 
-          <div class="small-12 columns atriTable">
-        
-            <div class="row headTable">
+        <hr>
 
-              <div class="small-5 columns expand text-center">ATRRIBUTE</div>
-              <div class="small-3 columns expand text-center">TOTAL</div>
-              <div class="small-2 columns expand text-center">ADD </div>
-              <div class="small-2 columns expand text-center">REST </div>
-
-            </div>  <!-- headTable -->
-<!-- FUERZA ---------------------------------------->
-            <div class="row prueba" value="0" stat="str">
+<!-- FUERZA********************************************************* -->
+          <div class="row prueba" value="0" stat="str">
 
               <div class="small-5 columns expand text-left">Fuerza</div>
 
               <div id="fuerza" class="small-3 columns expand text-center"> <p class="stat01"  >0</p> </div>
 
-              <div class="small-2 columns expand">
-                <a href="#" class="text-center button secondary round tiny centered plusButton" > + </a> 
+              <div class="small-4 columns expand">
+                <ul class="button-group round even-2">
+                  <li><a href="#" class="text-center button secondary  round tiny centered plusButton" > + </a></li>
+                  <li><a href="#" class="text-center button secondary round round tiny centered minusButton"> - </a></li>
+
+                </ul> 
               </div>
 
-              <div class="small-2 columns expand">
-                <a href="#" class="text-center button secondary round tiny centered minusButton"> - </a>
-              </div>
-
-            </div>
-<!-- DESTREZA -------------------------------------->
+          </div>
+<!-- DESTREZA******************************************************* -->
 
             <div class="row prueba" value="0" stat="dex">
 
@@ -100,55 +97,67 @@
 
               <div id="destreza" class="small-3 columns expand text-center"><p class="stat01" value="0">0</p> </div>
 
-              <div class="small-2 columns expand">
-                <a href="#" class="text-center button secondary  round tiny centered plusButton" > + </a>
-              </div>
-              <div class="small-2 columns expand">
-                <a href="#" class="text-center button secondary round round tiny centered minusButton"> - </a>
+              <div class="small-4 columns expand">
+                <ul class="button-group round even-2">
+                  <li><a href="#" class="text-center button secondary  round tiny centered plusButton" > + </a></li>
+                  <li><a href="#" class="text-center button secondary round round tiny centered minusButton"> - </a></li>
+
+                </ul> 
               </div>
 
             </div>
-<!-- INTELIGENCIA ---------------------------->
+<!-- INTELIGENCIA**************************************************** -->
 
             <div class="row prueba" value="0" stat="int">
 
               <div class="small-5 columns expand">Inteligencia</div>
               <div id="inteligencia" class="small-3 columns expand text-center"><p class="stat01" >0</p></div>
-              <div class="small-2 columns expand">
-                <a href="#" class="text-center button secondary  round tiny centered plusButton"> + </a>
-              </div>
-              <div class="small-2 columns expand">
-                <a href="#" class="text-center button secondary  round tiny centered minusButton"> - </a>
+              <div class="small-4 columns expand">
+                <ul class="button-group round even-2">
+                  <li><a href="#" class="text-center button secondary  round tiny centered plusButton" > + </a></li>
+                  <li><a href="#" class="text-center button secondary round round tiny centered minusButton"> - </a></li>
+
+                </ul> 
               </div>
 
             </div>
-<!-- CARISMA ---------------------------------->         
-            <div class="row prueba" value="0" stat="cha">
+<!-- CONSTITUCION******************************************** -->         
+            <div class="row prueba" value="0" stat="con">
 
-              <div class="small-5 columns expand">Carisma</div>
-              <div id="carisma" class="small-3 columns expand text-center"><p class="stat01" >0</p></div>
-              <div class="small-2 columns expand">
-                <a href="#" class="text-center button secondary  round tiny centered plusButton"> + </a>
-              </div>
-              <div class="small-2 columns expand">
-                <a href="#" class="text-center button secondary  round tiny centered minusButton"> - </a>
+              <div class="small-5 columns expand">Constitucion</div>
+              <div id="constitucion" class="small-3 columns expand text-center"><p class="stat01" >0</p></div>
+              <div class="small-4 columns expand">
+                <ul class="button-group round even-2">
+                  <li><a href="#" class="text-center button secondary  round tiny centered plusButton" > + </a></li>
+                  <li><a href="#" class="text-center button secondary round round tiny centered minusButton"> - </a></li>
+
+                </ul> 
               </div>
 
             </div>
           
-          </div> <!-- atritable -->
+<!-- APARIENCIA******************************************** -->         
+            <div class="row prueba" value="0" stat="apa">
 
-        
+              <div class="small-5 columns expand">Apariencia</div>
+              <div id="apariencia" class="small-3 columns expand text-center"><p class="stat01" >0</p></div>
+              <div class="small-4 columns expand">
+                <ul class="button-group round even-2">
+                  <li><a href="#" class="text-center button secondary  round tiny centered plusButton" > + </a></li>
+                  <li><a href="#" class="text-center button secondary round round tiny centered minusButton"> - </a></li>
+
+                </ul> 
+              </div>
+
+            </div>
+
+      
           <div class=" small-12 columns text-right">
-            <a class="button round secondary success left" role="button" href="#" data-reveal-id="myModal">Portrait Selection</a>
+            <a class="button round small success left" role="button" href="#" data-reveal-id="myModal">Portrait Selection</a>
             <h5>Total points Remaining: <span class="iniPoints"></span></h5>
           </div>
 
-        </div> <!-- statGen --> 
-
         </div>  
-
-      </div> <!-- pjEditor -->
 
 <!-- Aqui aparecen los membros del partie a medida q los van creando -->
 
@@ -162,115 +171,100 @@
 
         <div class="panel">
 
-<!-- parte de laexplicacion del personaje y sus stats principales -->
-
-          <div class="hide Expo hide-for-small" >
-
-            <h4 class="text-center title className"></h4>
-            <p class="resume"></p>
-            <p class="abilities"></p>
-
-          </div>
-
-            
-          <h5>ARE YOU READY?</h5>
-            
-          <h6 class="subheader hide-for-small">Tu personaje esta listo para la batalla, termina de editarlo o reemplazalo</h6>
+ 
+          <h6 class="subheader hide-for-small">Confirma la contratacion del personaje para el grupo de investigadores:</h6>
             
           <div class="row finalChoice">
 
 <!-- boton para grabar el personaje creado para utilizarlo despues -->
 
-            <a class="columns small-6 button round secondary success checkButton " role="button" href="#" >Add to Party</a>
+            <a class="columns small-6 button round tiny success checkButton " role="button" href="#" >Add to Party</a>
         
 <!-- boton para borrar todoy regresar a 0 -->
 
-            <a class="columns small-6 button round secondary success resetButton" role="button" aria-label="submit form" href="#" >REJECTED</a>
+            <a class="columns small-6 button round tiny success resetButton" role="button" aria-label="submit form" href="#" >REJECTED</a>
           
           </div>
   
         </div>
 
 <!-- aqui va el partie completo a medida q lo va editando -->
+        <div id="namePartie" class="hide">
+          <form action="">
+
+                  <label class="inline"  for="namepj">Name Your Partie
+                  <input id="selectedName" name="namepj" type="text" >
+                  </label>
+          </form>
+
+        </div>
+
 
         <div class="row finalButton">    
           <div class="columns small-12">
-             <button id="readyBaby" class="button centered success expand round disabled">LETS KILL SOME ORCS!!!</button>
+             <button id="readyBaby" class="button centered success expand round disabled">SAVE PARTIE</button>
+          </div>
+
+        </div>
+
+        <div class="row returnButton">    
+          <div class="columns small-12">
+             <button id="readyBaby" class="button centered success expand round">RETURN TO MAIN MENU</button>
           </div>
 
         </div>
 
       </div>
       <!-- cierre de infoPanel -->
+
     </div>
+<!-- CIERRE DE PAGINA DE CREACION -->
 
 
 
 
     <div id="myModal" class="reveal-modal picture_galery" data-reveal>
       <div class="row">
-        <div class="small-2 columns cha_image_galery"> 
-          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/01.jpg" alt="">
+        <div class="small-3 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/01.png" alt="">
           </a>
         </div>
 
-        <div class="small-2 columns cha_image_galery">
+        <div class="small-3 columns cha_image_galery">
+          <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/01.jpg" alt="">
+          </a>
+        </div>
+
+        <div class="small-3 columns cha_image_galery">
           <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/02.jpg" alt="">
           </a>
         </div>
 
-        <div class="small-2 columns cha_image_galery">
+        <div class="small-3 columns cha_image_galery">
           <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/03.jpg" alt="">
           </a>
         </div>
-
-        <div class="small-2 columns cha_image_galery">
-          <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/04.jpg" alt="">
+      </div> 
+      <div class="row margin_arriba">  
+        <div class="small-3 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/04.jpg" alt=""> 
           </a>
         </div>
         
-        <div class="small-2 columns cha_image_galery"> 
-          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/05.jpg" alt="">
+        <div class="small-3 columns cha_image_galery">
+          <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/05.jpg" alt="">
           </a>
         </div>
         
-        <div class="small-2 columns cha_image_galery"> 
+        <div class="small-3 columns cha_image_galery"> 
           <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/06.jpg" alt="">
           </a>
         </div>
-      </div>
-
-      <div class="row margin_arriba">  
-        <div class="small-2 columns cha_image_galery"> 
-          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/07.jpg" alt=""> 
-          </a>
-        </div>
         
-        <div class="small-2 columns cha_image_galery">
-          <a class="close-reveal-modal sexy-img" href="#"> <img class="cha_image" src="img/08.jpg" alt="">
+        <div class="small-3 columns cha_image_galery"> 
+          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/07.jpg" alt="">
           </a>
         </div>
-        
-        <div class="small-2 columns cha_image_galery"> 
-          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/09.jpg" alt="">
-          </a>
-        </div>
-        
-        <div class="small-2 columns cha_image_galery"> 
-          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/10.jpg" alt="">
-          </a>
-        </div>
-        
-        <div class="small-2 columns cha_image_galery"> 
-          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/11.jpg" alt="">
-          </a>
-        </div>
-        
-        <div class="small-2 columns cha_image_galery"> 
-          <a class="close-reveal-modal sexy-img" href="#"><img class="cha_image" src="img/12.jpg" alt="">
-          </a>
-        </div>
-
         
       </div>
     </div>
@@ -285,10 +279,6 @@
     </div>         
 
 
-
-    </div>
-
- 
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>

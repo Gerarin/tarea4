@@ -1,0 +1,31 @@
+.namepj{
+	background-color: transparent!important;
+	border: solid black 2px;
+}
+
+.headTable{
+
+	padding-bottom: 20px;
+}
+
+.margin_arriba{
+	margin-top: 20px;
+}
+
+.margin_abajo{
+	margin-bottom: 20px;
+}
+
+#cajaFinal>div{
+	border: 1px red solid;
+	margin-bottom: 5px;
+}
+
+#cajaFinal img{
+	height: 100px;
+	width: 100%;
+}
+
+.sexy-img{
+	position: relative!important;
+}
